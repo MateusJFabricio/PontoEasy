@@ -1,5 +1,6 @@
 package com.example.pontoeasy;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
@@ -35,14 +36,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         String msg = "";
-
+        Intent intent;
         //verifica qual dos itens foi selecionado e atribui a string msg o titulo do item
         switch(item.getItemId()){
             case R.id.btnPerfil:
-                msg = "perfil";
+                intent = new Intent(this, PerfilActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btnHistorico:
-                msg = "historico";
+                intent = new Intent(this, HistoricoActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btnEnviar:
                 msg = "enviar";
