@@ -5,9 +5,6 @@
         android:id="@+id/btnPerfil"
         android:title="Perfil" />
     <item
-        android:id="@+id/btnEnviar"
-        android:title="Enviar" />
-    <item
         android:id="@+id/btnHistorico"
         android:title="Historico"
         app:showAsAction="always"

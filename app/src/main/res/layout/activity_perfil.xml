@@ -6,24 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".PerfilActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars[0]" />
-
     <LinearLayout
         android:layout_width="318dp"
         android:layout_height="380dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <TextView
             android:id="@+id/textView5"
@@ -32,12 +23,11 @@
             android:text="Nome" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/txtNomePrincipal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView4"
@@ -46,12 +36,11 @@
             android:text="Email" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Email" />
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textView7"
@@ -60,12 +49,11 @@
             android:text="Senha" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Senha" />
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/btnSalvarPerfil"
@@ -74,5 +62,39 @@
             android:onClick="btnSalvarPerfil_onClick"
             android:text="Salvar" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btnFoto_OnClick"
+        android:text="Foto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Editar Perfil"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="151dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:srcCompat="@drawable/avatar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

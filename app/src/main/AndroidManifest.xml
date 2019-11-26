@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pontoeasy">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".ExportarActivity"></activity>
+        <activity android:name=".ConfirmarPontoActivity" />
+        <activity android:name=".EditarPontoActivity" />
+        <activity android:name=".PerfilActivity" />
         <activity android:name=".HistoricoActivity" />
         <activity
             android:name=".ui.login.LoginActivity"
